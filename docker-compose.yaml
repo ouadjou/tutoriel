@@ -20,3 +20,9 @@ services:
       - .env
     depends_on:
       - db
+
+  ng:
+    container_name: ng
+    build: angular
+    ports:
+      - "8080:80"
